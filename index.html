@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rx Example</title>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Nunito:600');
+        body {
+            background-color: #F2F3F4;
+            font-family: "Nunito"
+        }
+
+        ul {
+            list-style-type: none;
+            width: 80%;
+            margin: 50px auto 0 auto;
+        }
+
+        li {
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #D7DBDD;
+        }
+
+        li:hover {
+            background: red;
+            color: yellow;
+        }
+
+        #box {
+            padding: 8px 5px;
+            border: 1px solid #D7DBDD;
+            border-radius: 5px;
+            background: white;
+            position: absolute;
+            color: darkgray;
+            font-size: smaller
+        }
+
+        .box-dark {
+            background: whitesmoke !important;
+            color: black !important;
+            -webkit-box-shadow: -1px 18px 48px -13px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 18px 48px -13px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 18px 48px -13px rgba(0, 0, 0, 0.75);
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="output">
+    </ul>
+    <div id="box">
+        This div element has mouseover event through the fromEvent feature of rxjs
+    </div>
+</body>
+<script src="bundle.js"></script>
+
+</html>
